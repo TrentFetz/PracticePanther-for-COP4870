@@ -35,16 +35,7 @@ namespace PP.Library.Models
             return new ClientEC().Delete(id);
         }
 
-        //public Client? Delete(int id)
-        //{
-        //    //return new ClientEC().Delete(client);
-        //    var clientToDelete = Database.Clients.FirstOrDefault(c => c.Id == id);
-        //    if (clientToDelete != null)
-        //    {
-        //        Database.Clients.Remove(clientToDelete);
-        //    }
-        //    return clientToDelete;
-        //}
+
 
         [HttpPost]
         public Client AddOrUpdate([FromBody]Client client)
